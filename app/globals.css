@@ -13,6 +13,23 @@ img {
 
 @layer utilities {
   .root-container {
-    @apply max-w-6xl mx-auto w-full xl:px-0 lg:px-4 px-2;
+    @apply max-w-6xl mx-auto w-full xl:px-0 px-5;
   }
+}
+
+.hero-bg {
+  background: radial-gradient(
+    59.82% 121.73% at -9.66% 130.31%,
+    #00e9ea 0%,
+    #1f80f0 52.08%,
+    #005bc4 100%
+  );
+}
+
+.gradient-overlay-img {
+  background: linear-gradient(
+    190deg,
+    #1f80f0 15.05%,
+    rgba(31, 128, 240, 0) 30.39%
+  );
 }
