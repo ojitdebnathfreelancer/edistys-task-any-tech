@@ -42,8 +42,10 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 w-full z-[999999]">
       <div
         className={`fixed top-0 left-0 w-full z-[99999] lg:bg-transparent ${
-          isVisible && lastScrollY > 100 && "lg:bg-white-text"
-        } bg-blue-text transition-transform py-7 duration-300 lg:shadow-none shadow-button-primary-shadow ${
+          isVisible && lastScrollY > 100
+            ? "lg:bg-white-text shadow-button-primary-shadow"
+            : "lg:shadow-none"
+        } bg-blue-text transition-transform py-7 duration-300   ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
