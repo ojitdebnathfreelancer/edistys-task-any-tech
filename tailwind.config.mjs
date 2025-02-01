@@ -12,9 +12,12 @@ export default {
       colors: {
         "white-text": "rgb(255, 255, 255)",
         "blue-text": "rgb(31, 128, 240)",
-        "blue-text2": "rgb(22 67 119)",
+        "blue-text2": "rgb(22, 67, 119)",
         "orange-main-bg": "rgb(254, 139 ,83)",
-        "gray-bg": "rgb(248 252 255)",
+        "gray-bg": "rgb(248, 252, 255)",
+        "footer-bg": "rgb(0, 32, 69)",
+        "footer-text": "rgb(0, 233, 234)",
+        "copy-bg": "rgb(0, 21, 45)",
       },
       boxShadow: {
         "button-primary-shadow": "0px 3px 3px rgba(16, 62, 117, 0.37)",

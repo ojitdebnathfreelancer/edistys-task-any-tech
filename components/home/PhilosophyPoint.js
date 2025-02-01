@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 const data = [
   {
@@ -20,10 +22,22 @@ const data = [
 ];
 
 const PhilosophyPoint = () => {
+  // initialized aos
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10">
       {data.map((item, i) => (
-        <div key={i} className="bg-gray-bg rounded-xl md:p-4 p-5">
+        <div
+          data-aos="fade-up"
+          key={i}
+          className="bg-gray-bg rounded-xl md:p-4 p-5"
+        >
           <Image src={item?.icon} alt="icon" width={50} height={50} />
           <h1 className="text-2xl text-blue-text2 font-semibold my-5">
             {item?.title}
