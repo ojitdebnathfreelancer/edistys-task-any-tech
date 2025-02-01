@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import PhilosophyPoint from "./PhilosophyPoint";
 
 const Philosophy = () => {
   return (
@@ -7,7 +8,7 @@ const Philosophy = () => {
       <h3 className="text-blue-text lg:text-lg text-sm lg:font-bold font-semibold lg:tracking-[3px] tracking-[2px] text-center mb-5">
         OUR PHILOSOPHY
       </h3>
-      <h1 className="lg:text-6xl text-4xl font-semibold text-black/85 lg:leading-[65px] text-center">
+      <h1 className="lg:text-6xl text-4xl font-semibold text-blue-text2 lg:leading-[65px] text-center">
         Human-centred innovation
       </h1>
 
@@ -25,6 +26,8 @@ const Philosophy = () => {
         alt="philosophy"
         className="w-full mt-10 md:hidden block"
       />
+
+      <PhilosophyPoint />
     </div>
   );
 };

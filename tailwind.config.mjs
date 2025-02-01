@@ -6,6 +6,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
       colors: {
@@ -13,6 +14,7 @@ export default {
         "blue-text": "rgb(31, 128, 240)",
         "blue-text2": "rgb(22 67 119)",
         "orange-main-bg": "rgb(254, 139 ,83)",
+        "gray-bg": "rgb(248 252 255)",
       },
       boxShadow: {
         "button-primary-shadow": "0px 3px 3px rgba(16, 62, 117, 0.37)",
