@@ -39,7 +39,7 @@ const Banner = () => {
   }, [handleMouseMove]);
 
   return (
-    <div className="xl:h-[max(620px,_calc(95vh-50px))] lg:h-[max(645px,_calc(95vh-50px))] w-full lg:clip-hero-clip clip-hero-clip-phone relative overflow-hidden hero-bg">
+    <div className="xl:h-[max(620px,_calc(95vh-50px))] lg:h-[max(645px,_calc(95vh-50px))] w-full lg:clip-hero-clip clip-hero-clip-phone relative overflow-hidden hero-bg lg:pt-7 pt-24">
       <Image
         src="/backgrounds/WaveLinesDesktop2.svg"
         alt="banner"

@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         "white-text": "rgb(255, 255, 255)",
+        "blue-text": "rgb(31, 128, 240)",
         "orange-main-bg": "rgb(254, 139 ,83)",
       },
       boxShadow: {
