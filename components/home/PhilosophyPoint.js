@@ -23,7 +23,7 @@ const PhilosophyPoint = () => {
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10">
       {data.map((item, i) => (
-        <div key={i} className="bg-gray-bg rounded-xl md:p-8 p-5">
+        <div key={i} className="bg-gray-bg rounded-xl md:p-4 p-5">
           <Image src={item?.icon} alt="icon" width={50} height={50} />
           <h1 className="text-2xl text-blue-text2 font-semibold my-5">
             {item?.title}
