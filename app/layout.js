@@ -1,6 +1,7 @@
 import Navbar from "@/components/common/Navbar";
 import "./globals.css";
 import Footer from "@/components/common/Footer";
+import "aos/dist/aos.css";
 
 export const metadata = {
   title: "Any tech",

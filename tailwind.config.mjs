@@ -11,6 +11,7 @@ export default {
       colors: {
         "white-text": "rgb(255, 255, 255)",
         "blue-text": "rgb(31, 128, 240)",
+        "blue-text2": "rgb(22 67 119)",
         "orange-main-bg": "rgb(254, 139 ,83)",
       },
       boxShadow: {

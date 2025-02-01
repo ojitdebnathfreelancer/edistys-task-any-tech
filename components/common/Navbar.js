@@ -14,8 +14,11 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const commonLinkClasses =
-    "text-lg capitalize relative after:absolute after:opacity-0 hover:after:opacity-100 link-transmission after:w-[150%] after:translate-x-[-20%] after:h-[1px] after:bottom-[-10px] after:left-0 after:bg-white-text";
+  const commonLinkClasses = `text-lg capitalize relative after:absolute after:opacity-0 hover:after:opacity-100 link-transmission after:w-[150%] after:translate-x-[-20%] after:h-[1px] after:bottom-[-10px] after:left-0  ${
+    isVisible && lastScrollY > 100
+      ? "after:lg:bg-blue-text"
+      : "after:bg-white-text"
+  }`;
 
   // handel navbar showing and hidden by scrolling
   const handleScroll = () => {
@@ -38,22 +41,37 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-[999999]">
       <div
-        className={`fixed top-0 left-0 w-full z-[99999] lg:bg-transparent bg-blue-text transition-transform py-7 duration-300 lg:shadow-none shadow-button-primary-shadow ${
+        className={`fixed top-0 left-0 w-full z-[99999] lg:bg-transparent ${
+          isVisible && lastScrollY > 100 && "lg:bg-white-text"
+        } bg-blue-text transition-transform py-7 duration-300 lg:shadow-none shadow-button-primary-shadow ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
         <nav className="root-container flex items-center justify-between">
           <Link href={"/"} className="inline-block">
             <Image
+              src={isVisible && lastScrollY > 100 ? "/logo2.svg" : "/logo.svg"}
+              alt="logo"
+              width={150}
+              height={500}
+              className="h-7 lg:block hidden"
+            />
+            <Image
               src="/logo.svg"
               alt="logo"
               width={150}
               height={500}
-              className="h-7"
+              className="h-7 lg:hidden block"
             />
           </Link>
 
-          <ul className="lg:flex hidden items-center gap-x-16 text-white-text ">
+          <ul
+            className={`lg:flex hidden items-center gap-x-16  ${
+              isVisible && lastScrollY > 100
+                ? "lg:text-blue-text"
+                : "text-white-text"
+            }`}
+          >
             <li className="relative group">
               <button
                 type="button"
@@ -103,7 +121,11 @@ const Navbar = () => {
           <div className="lg:block hidden">
             <button
               type="button"
-              className="outline-none border border-white rounded-md flex items-center duration-300 gap-x-3 py-3 px-5 capitalize text-white-text font-bold text-xl hover:text-blue-text hover:bg-white-text hover:shadow-button-primary-shadow"
+              className={`outline-none border border-white rounded-md flex items-center duration-300 gap-x-3 py-3 px-5 capitalize text-white-text font-bold text-xl   hover:shadow-button-primary-shadow ${
+                isVisible && lastScrollY > 100
+                  ? "lg:bg-orange-500"
+                  : "hover:bg-white-text hover:text-blue-text"
+              }`}
             >
               Contact us <IoIosArrowForward size={15} className="" />
             </button>

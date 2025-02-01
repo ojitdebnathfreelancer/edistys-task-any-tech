@@ -37,3 +37,78 @@ img {
 .link-transmission::after {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.finance-animate1,
+.finance-animate2,
+.finance-animate3 {
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.finance-animate1 {
+  animation-duration: 7s;
+  animation-name: animate1;
+}
+.finance-animate2 {
+  animation-duration: 9s;
+  animation-name: animate2;
+}
+.finance-animate3 {
+  animation-duration: 12s;
+  animation-name: animate3;
+}
+
+@keyframes animate1 {
+  0% {
+    top: 80px;
+  }
+  25% {
+    top: 75px;
+  }
+  50% {
+    top: 70px;
+  }
+  75% {
+    top: 75px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    top: 180px;
+  }
+  25% {
+    top: 175px;
+  }
+  50% {
+    top: 170px;
+  }
+  75% {
+    top: 175px;
+  }
+  100% {
+    top: 180px;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    top: 80px;
+  }
+  25% {
+    top: 75px;
+  }
+  50% {
+    top: 70px;
+  }
+  75% {
+    top: 75px;
+  }
+  100% {
+    top: 80px;
+  }
+}
