@@ -30,6 +30,9 @@ export default {
         "bg-clip-hero-image":
           "polygon(67% 0, 100% 0, 100% 68%, 80% 100%, 0 100%, 32% 51%)",
         "bg-clip-hero-image-phone": "polygon(0 15%, 100% 0, 100% 85%, 0% 100%)",
+        "legacy-clip-xl": "polygon(0 0,100% 49%,100% 100%,0% 100%)",
+        "legacy-clip-md": "polygon(0 0,100% 29%,100% 100%,0% 100%)",
+        "legacy-clip-phone": "polygon(0 0,100% 14%,100% 100%,0% 100%)",
       },
     },
   },

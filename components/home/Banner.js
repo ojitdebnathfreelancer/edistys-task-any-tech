@@ -2,7 +2,6 @@
 import Image from "next/image";
 import BannerButton from "./BannerButton";
 import { useCallback, useEffect, useState } from "react";
-// import AOS from "aos";
 
 const Banner = () => {
   const [prevMousePos, setPrevMousePos] = useState({ x: 0, y: 0 });
@@ -39,15 +38,6 @@ const Banner = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [handleMouseMove]);
 
-  // initialized aos
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     once: true,
-  //     easing: "ease-in-out",
-  //   });
-  // }, []);
-
   return (
     <div className="xl:h-[max(620px,_calc(95vh-50px))] lg:h-[max(645px,_calc(95vh-50px))] w-full lg:clip-hero-clip clip-hero-clip-phone relative overflow-hidden hero-bg lg:pt-7 pt-24">
       <Image
@@ -55,7 +45,6 @@ const Banner = () => {
         alt="banner"
         height={10000}
         width={10000}
-        // data-aos="fade-right"
         className={`object-cover duration-1000 absolute lg:block hidden ${
           whichSide === "yDown" ? "top-[-500px]" : "top-[-530px]"
         } ${whichSide === "xLeft" ? "left-[-120px]" : "left-[-145px]"} z-[1]`}
@@ -66,7 +55,6 @@ const Banner = () => {
         alt="banner2"
         height={10000}
         width={10000}
-        // data-aos="fade-left"
         className={`bg-cover duration-1000 absolute lg:block hidden ${
           whichSide === "yDown" ? "top-[20px]" : "top-[-2px]"
         } ${whichSide === "xLeft" ? "left-[20px]" : "left-[-1px]"} z-[2]`}
@@ -89,7 +77,7 @@ const Banner = () => {
             Reimagine financial services with AnyTech’s open platform,
             distributed banking solution that powers transformation
           </p>
-          <BannerButton />
+          <BannerButton text="Reach out to us" />
         </div>
       </div>
 
