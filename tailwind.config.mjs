@@ -21,6 +21,8 @@ export default {
       },
       boxShadow: {
         "button-primary-shadow": "0px 3px 3px rgba(16, 62, 117, 0.37)",
+        "slide-item-shadow":
+          "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px",
       },
       clipPath: {
         "hero-clip": "polygon(0 0, 100% 0, 100% 81%, 0% 100%)",

@@ -2,6 +2,8 @@ import Navbar from "@/components/common/Navbar";
 import "./globals.css";
 import Footer from "@/components/common/Footer";
 import "aos/dist/aos.css";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export const metadata = {
   title: "Any tech",
