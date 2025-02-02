@@ -1,4 +1,4 @@
-import React from "react";
+import CountNumber from "../common/CountNumber";
 
 const Counter = () => {
   return (
@@ -8,17 +8,24 @@ const Counter = () => {
       </h3>
       <div className="grid lg:grid-cols-3 grid-cols-1">
         <div className="text-center lg:block flex justify-between lg:py-0 py-5 lg:border-none border-b-[1.5px] border-dotted border-blue-text/70">
-          <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[#1F80F0] to-[#0057BB] md:text-8xl text-6xl font-semibold">{`>20`}</h1>
+          <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[#1F80F0] to-[#0057BB] md:text-8xl text-6xl font-semibold">
+            <CountNumber number={20} prefix={`>`} />
+          </h1>
+
           <p className="text-xl mt-4">Years of Experience</p>
         </div>
 
         <div className="text-center lg:block flex justify-between lg:py-0 py-5 lg:border-none border-b-[1.5px] border-dotted border-blue-text/70">
-          <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[#1F80F0] to-[#0057BB] md:text-8xl text-6xl font-semibold">{`40+`}</h1>
+          <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[#1F80F0] to-[#0057BB] md:text-8xl text-6xl font-semibold">
+            <CountNumber number={40} prefix={""} suffix={`+`} />
+          </h1>
           <p className="text-xl mt-4">Financial Institutions</p>
         </div>
 
         <div className="text-center lg:block flex justify-between lg:py-0 py-5 lg:border-none border-b-[1.5px] border-dotted border-blue-text/70">
-          <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[#1F80F0] to-[#0057BB] md:text-8xl text-6xl font-semibold">{`>200m`}</h1>
+          <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-[#1F80F0] to-[#0057BB] md:text-8xl text-6xl font-semibold">
+            <CountNumber number={200} prefix={">"} suffix={`m`} />
+          </h1>
           <p className="text-xl mt-4">Customers Each</p>
         </div>
       </div>
