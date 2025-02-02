@@ -74,7 +74,6 @@ const Brands = () => {
           centeredSlides={true}
           slidesPerView={1.5}
           spaceBetween={-15}
-          loop={true}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,

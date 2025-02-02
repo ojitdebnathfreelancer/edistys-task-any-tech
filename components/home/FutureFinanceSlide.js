@@ -63,11 +63,7 @@ const FutureFinance = () => {
     clickable: true,
     renderBullet: function (index, className) {
       return (
-        '<span className="' +
-        className +
-        '">' +
-        buttonText[index]?.text +
-        "</span>"
+        '<span class="' + className + '">' + buttonText[index]?.text + "</span>"
       );
     },
   };
