@@ -2,7 +2,7 @@ import CountNumber from "../common/CountNumber";
 
 const Counter = () => {
   return (
-    <div className="root-container my-20">
+    <div className="root-container">
       <h3 className="text-blue-text lg:text-lg text-sm lg:font-bold font-semibold lg:tracking-[3px] tracking-[2px] text-center mb-5">
         TRUSTED BY THE BEST
       </h3>
